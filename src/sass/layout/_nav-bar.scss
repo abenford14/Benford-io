@@ -1,0 +1,49 @@
+.nav {
+    position: sticky;
+    top: 0;
+    background-color: $color-primary;
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__item {
+        position: relative;
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1.2rem 2rem;
+        cursor: pointer;
+
+        &::after {
+            position: absolute;
+            content: "";            
+            bottom: 0;
+            width: 0%;
+            height: 4px;
+            background-color: $color-secondary-dark;
+            transition: width .5s cubic-bezier(.86, .04, .21, .34);
+        }
+
+        &:hover::after {
+            width: 100%;
+        }
+
+        &:active {
+            background-color: lighten($color-primary, 10%);
+        }
+    }
+
+    &__item-text {
+        font-size: 2rem;
+        letter-spacing: .2rem;
+        transition: transform .2s;        
+    }
+
+    &__item:hover &__item-text {
+        transform: scale(1.1);
+    }
+}

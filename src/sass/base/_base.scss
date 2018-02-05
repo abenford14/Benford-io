@@ -6,6 +6,10 @@
     box-sizing: inherit;
 }
 
+ul {
+    list-style: none;    
+}
+
 html {
     font-size: 62.5%;
 }
@@ -16,6 +20,11 @@ body {
 }
 
 ::selection {
-    // background-color: $color-primary;
+    background-color: $color-primary;
     color: #fff;
+}
+
+.main {
+    height: 150vh;
+    background-color: $color-primary-light;
 }

@@ -1,0 +1,42 @@
+.header {
+    &__container {
+        height: 85vh;
+        background-image: linear-gradient(to right bottom, rgba($color-primary-light, .7), rgba($color-primary-dark, .7)), url('hero.jpg');
+        filter: grayscale(100%);
+        background-size: cover;
+        background-position: top;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    &__heading {
+
+        &.heading-primary {
+            animation: grow-fade-in 1s;
+            animation-fill-mode: backwards;
+        }
+        
+        &.heading-secondary {
+            animation: grow-fade-in 1s .5s;
+            animation-fill-mode: backwards;
+        }
+    }
+
+    &__link {
+        display: inline-block;
+        animation: wobble 1.4s 1.5s infinite;
+
+        &:link, &:visited {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        &:hover {
+            animation: none;
+            transition: transform .5s;
+            transform: scale(1.1);
+        }
+    }
+}
