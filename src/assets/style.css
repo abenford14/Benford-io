@@ -116,13 +116,7 @@ body {
 .main {
   height: 150vh;
   background-color: #515052;
-  padding: 5rem; }
-
-.content {
-  width: 100%;
-  height: 50%;
-  background-color: #BABABA;
-  border-radius: .5rem; }
+  padding: 5rem 0; }
 
 body {
   font-family: 'Cabin', sans-serif;
@@ -144,6 +138,43 @@ body {
 
 .u-margin-bottom-small {
   margin-bottom: 2rem; }
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 5rem; }
+
+[class^="col"] {
+  height: 50px;
+  background-color: teal; }
+  [class^="col"]:not(:last-child) {
+    margin-right: 5rem; }
+
+.col-1-4 {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 calc(25% - (5rem / 4) * 3);
+  flex: 0 0 calc(25% - (5rem / 4) * 3); }
+
+.col-1-3 {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 calc(33.3333% - (5rem / 3) * 2);
+  flex: 0 0 calc(33.3333% - (5rem / 3) * 2); }
+
+.col-1-2 {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 calc(50% - (5rem / 2));
+  flex: 0 0 calc(50% - (5rem / 2)); }
+
+.col-2-3 {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 calc(66.6666% - (5rem / 3));
+  flex: 0 0 calc(66.6666% - (5rem / 3)); }
+
+.col-3-4 {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 calc(75% - (5rem / 4));
+  flex: 0 0 calc(75% - (5rem / 4)); }
 
 .header__container {
   height: 85vh;

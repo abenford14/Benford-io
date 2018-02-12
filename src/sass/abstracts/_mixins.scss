@@ -1,0 +1,3 @@
+@mixin col-width ($span, $total) {
+    flex: 0 0 calc((($span / $total) * 100%) - (#{$grid-gutter} / $total) * ($total - $span));
+}

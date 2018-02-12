@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { LabModule } from './pages/lab/lab.module';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
